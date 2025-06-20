@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mojave Landing Page</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+</head>
+
+<body class="bg-gradient-to-b from-yellow-50 to-white min-h-screen font-sans">
+
+    <!-- Header -->
+    <header class="flex justify-between items-center px-4 md:px-10 py-4 md:py-6 bg-transparent">
+        <div class="flex items-center space-x-2">
+            <img src="assets/logos/mojavelabs.png" alt="Mojave Logo" class="h-10 md:h-14 w-auto">
+        </div>
+        <nav class="hidden md:flex space-x-8 text-gray-700 font-medium">
+            <a href="#" class="hover:text-yellow-600">Services & Solutions</a>
+            <a href="#" class="hover:text-yellow-600">About Us</a>
+            <a href="#" class="hover:text-yellow-600">Careers</a>
+        </nav>
+        <a href="https://mojave.fillout.com/t/qAGxL74qqius"
+            class="bg-yellow-400 hover:bg-yellow-500 text-black font-semibold px-4 py-2 md:px-5 md:py-2 rounded-lg shadow flex items-center gap-2">
+            <img src="assets/arrow.svg" alt="Arrow" class="h-4 w-4 md:h-5 md:w-5">
+            Contact Us
+        </a>
+    </header>
+
+
+    <!-- Hero Section -->
+    <section
+        class="flex flex-col items-center text-center px-4 pt-12 pb-20 relative bg-gradient-to-b from-yellow-50 to-white">
+        <h1 class="text-4xl md:text-5xl font-extrabold text-gray-900 mb-4">
+            Trusted Experts in<br>Unattended Payments
+        </h1>
+        <p class="text-lg text-gray-600 mb-6 max-w-xl mx-auto">
+            Seamless payments through kiosks, QR, and mobile systems for EV charging, transit, and retail environments.
+        </p>
+        <a href="#"
+            class="bg-yellow-400 hover:bg-yellow-500 text-black font-semibold px-6 py-3 rounded-lg shadow flex items-center justify-center gap-2 mb-10">
+            Get Started
+            <img src="assets/arrow.svg" alt="Arrow" class="h-4 w-4">
+        </a>
+
+        <!-- 3-column layout for cards + phone -->
+        <div
+            class="relative flex flex-col md:flex-row items-center justify-center gap-8 md:gap-16 mt-10 md:mt-16 min-h-[340px]">
+
+            <!-- Left card -->
+            <div class="relative bg-white rounded-xl shadow-md px-6 py-4 w-[280px] flex items-center gap-4 md:-rotate-2 md:-mt-52">
+                <!-- Icon circle -->
+                <div class="flex-shrink-0 bg-[#b6b68a] rounded-full w-14 h-14 flex items-center justify-center">
+                    <img src="assets/gateway-icon.svg" alt="Gateway Icon" class="w-7 h-7">
+                </div>
+                <!-- Text -->
+                <div class="flex flex-col text-left">
+                    <span class="text-gray-600 font-medium text-base mb-1">Mojave Pay Gateway</span>
+                    <span class="text-2xl font-extrabold text-black">$25,000.00</span>
+                </div>
+                <!-- Checkmark badge (overhanging corner) -->
+                <img src="assets/checkmark.svg" alt="Checkmark" class="absolute -top-2 -right-2 w-8 h-8">
+            </div>
+
+            <!-- Center: Mojave Logo -->
+            <div class="relative z-20 flex items-center justify-center md:-mt-20">
+                <img src="assets/mojave-no-background.png" alt="Mojave Logo" class="h-32 md:h-40 lg:h-48 w-auto max-w-full object-contain">
+            </div>
+
+            <!-- Right card -->
+            <div class="relative bg-white rounded-xl shadow-md px-6 py-4 w-[280px] flex flex-col text-left md:rotate-2">
+                <span class="text-gray-500 text-sm mb-1">Order 678</span>
+                <div class="flex items-center mb-3">
+                    <span class="text-2xl font-extrabold text-black">$1,500</span>
+                    <span
+                        class="ml-2 inline-flex items-center bg-green-100 text-green-700 text-xs font-medium px-2.5 py-1 rounded-full">
+                        ✔ <span class="ml-1">Successful</span>
+                    </span>
+                </div>
+                <div class="flex items-center mt-2">
+                    <div class="flex items-center justify-between bg-black text-white w-full px-4 py-3 rounded-lg">
+                        <span class="text-sm font-medium">Direct Payment</span>
+                        <!-- <img src="assets/direct-payment-icon.svg" alt="Logo" class="h-6 w-6"> -->
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+
+
+    <!-- Trusted By Section -->
+    <!--<section class="flex justify-center py-10 bg-transparent -mt-36 z-30 relative">
+        <div
+            class="bg-white rounded-2xl shadow-lg px-6 md:px-16 md:-mt-20 min-h-[200px] py-12 w-full max-w-7xl flex flex-col items-center">
+            <span class="text-gray-500 text-base mb-6 text-center">Trusted by Global Industry Leaders</span>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4 w-full">
+                <div class="flex items-center justify-center border rounded-xl py-6 bg-white">
+                    <img src="assets/visa.png" alt="Visa Icon" class="h-6 w-auto">
+                </div>
+                <div class="flex items-center justify-center border rounded-xl py-6 bg-white">
+                    <img src="assets/honeywell-logo.svg" alt="Honeywell Logo" class="h-6 w-auto">
+                </div>
+                <div class="flex items-center justify-center border rounded-xl py-6 bg-white">
+                    <img src="assets/samsung.svg" alt="Samsung Logo" class="h-6 w-auto text-black">
+                </div>                
+                <div class="flex items-center justify-center border rounded-xl py-6 bg-white">
+                    <div class="flex items-center space-x-3">
+                        <img src="assets/verifone.svg" alt="Verifone Icon" class="h-6 w-auto">
+                        <span class="font-semibold text-lg text-black">verifone</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>-->
+
+    <!-- Solutions Section -->
+    <section class="px-4 max-w-6xl mx-auto mb-20">
+        <div class="text-center mb-10">
+            <span
+                class="inline-block bg-yellow-100 text-yellow-700 px-3 py-1 rounded-full text-xs font-semibold mb-2">Solutions</span>
+            <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-3">Payment Solutions Built to Scale</h2>
+            <p class="text-gray-600 max-w-2xl mx-auto">Deploy ready-made tools like kiosks, QR, and mobile payment
+                systems built for EV charging, retail, and transit.</p>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-8">
+
+            <!-- Card 1 Honeybee Kiosk -->
+            <div class="bg-white rounded-2xl shadow-lg flex flex-col overflow-hidden">
+                <div class="bg-gray-200 h-48 w-full flex items-center justify-center">
+                    <img src="assets/logos/honeybeekiosk.png" alt="Honeybee Kiosk" class="w-full h-48 object-cover">
+                </div>
+                <div class="p-6 flex flex-col flex-1">
+                    <span
+                        class="inline-block bg-yellow-100 text-yellow-700 px-2 py-1 rounded-full text-xs font-semibold mb-2">HONEYBEE
+                        KIOSK</span>
+                    <h3 class="font-bold text-lg mb-2">Increase your sales with an unattended solution</h3>
+                    <p class="text-gray-600 mb-4">Honeybee kiosk has an affordable unattended kiosk solution that allows
+                        you to process orders and payments 24/7. Choose from seven different templates that apply to
+                        multiple verticals. You have complete control over your colors and branding and product line .
+                        Honeybee will make your sales that much sweeter.</p>
+                    <a href="https://honeybeekiosk.com"
+                        class="mt-auto text-yellow-700 font-semibold flex items-center hover:underline">Visit Honeybeekiosk.com
+                        <span class="ml-1">→</span></a>
+                </div>
+            </div>
+
+            <!-- Card 2  Parsley -->
+            <div class="bg-white rounded-2xl shadow-lg flex flex-col overflow-hidden">
+                <div class="bg-gray-200 h-48 w-full flex items-center justify-center p-8">
+                    <img src="assets/logos/parsley.png" alt="mobile order"
+                        class="max-h-full max-w-full object-contain">
+                </div>
+                <div class="p-6 flex flex-col flex-1">
+                    <span
+                        class="inline-block bg-yellow-100 text-yellow-700 px-2 py-1 rounded-full text-xs font-semibold mb-2">PARSLEY</span>
+                    <h3 class="font-bold text-lg mb-2">Mobile Ordering</h3>
+                    <p class="text-gray-600 mb-4">Easily manage orders from mobile or terminals with seamless
+                        integration into leading POS systems.</p>
+                    <a href="#" class="mt-auto text-yellow-700 font-semibold flex items-center hover:underline">Learn
+                        More <span class="ml-1">→</span></a>
+                </div>
+            </div>
+
+            <!-- Card 3 Payy -->
+            <div class="bg-white rounded-2xl shadow-lg flex flex-col overflow-hidden">
+                <div class="bg-gray-200 h-48 w-full flex items-center justify-center">
+                    <img src="assets/logos/payy.png" alt="Pay by QR code" class="w-full h-48 object-cover">
+                </div>
+                <div class="p-6 flex flex-col flex-1">
+                    <span
+                        class="inline-block bg-yellow-100 text-yellow-700 px-2 py-1 rounded-full text-xs font-semibold mb-2">PAYY.NET</span>
+                    <h3 class="font-bold text-lg mb-2">Payy as you want</h3>
+                    <p class="text-gray-600 mb-4">Payy.net is an easy to use payment platform that works with multiple
+                        payment gateways. Payy allows significant customization and personalization . Features such as
+                        scheduled payments, pay by link, pay by QR code and embedded payments are all supported.</p>
+                    <a href="https://payy.net"
+                        class="mt-auto text-yellow-700 font-semibold flex items-center hover:underline">Visit Payy.net
+                        <span class="ml-1">→</span></a>
+                </div>
+            </div>
+
+            <!-- Card 4: Plata -->
+            <div class="bg-white rounded-2xl shadow-lg flex flex-col overflow-hidden">
+                <div class="bg-gray-200 h-48 w-full flex items-center justify-center">
+                    <img src="assets/logos/plata.png" alt="Plata Solution" class="w-full h-48 object-cover">
+                </div>
+                <div class="p-6 flex flex-col flex-1">
+                    <span
+                        class="inline-block bg-yellow-100 text-yellow-700 px-2 py-1 rounded-full text-xs font-semibold mb-2">PLATA.LAT</span>
+                    <h3 class="font-bold text-lg mb-2">Payy as you want in Latin America</h3>
+                    <p class="text-gray-600 mb-4">Plata offers the same great features and functionality as payy.net but
+                        localized for Latin America and the Caribbean. Spanish and Portuguese languages are supported
+                        and multiple localized currencies as well.</p>
+                    <a href="https://plata.lat"
+                        class="mt-auto text-yellow-700 font-semibold flex items-center hover:underline">Visit Plata.lat
+                        <span class="ml-1">→</span></a>
+                </div>
+            </div>
+
+            <!-- Card 5: Repayy -->
+            <div class="bg-white rounded-2xl shadow-lg flex flex-col overflow-hidden">
+                <div class="bg-gray-200 h-48 w-full flex items-center justify-center">
+                    <img src="assets/logos/repayy.png" alt="Repayy Solution" class="w-full h-48 object-cover">
+                </div>
+                <div class="p-6 flex flex-col flex-1">
+                    <span
+                        class="inline-block bg-yellow-100 text-yellow-700 px-2 py-1 rounded-full text-xs font-semibold mb-2">REPAYING.CO</span>
+                    <h3 class="font-bold text-lg mb-2">Create instant repayment plans</h3>
+                    <p class="text-gray-600 mb-4">Repayy.net makes it a snap to instantly create payment schedules and
+                        link multiple types of payments to your custom payments schedule . Using repayy is perfect for
+                        small loans to friends and family or it could even be used for your small business. You even
+                        have the ability to have legal documents drafted up and signed through DocuSign.</p>
+                    <a href="https://repaying.co"
+                        class="mt-auto text-yellow-700 font-semibold flex items-center hover:underline">Visit Repaying.co
+                        <span class="ml-1">→</span></a>
+                </div>
+            </div>
+
+            <!-- Card 6: Fundd -->
+            <div class="bg-white rounded-2xl shadow-lg flex flex-col overflow-hidden">
+                <div class="bg-gray-200 h-48 w-full flex items-center justify-center">
+                    <img src="assets/logos/fundd.png" alt="Fundd Solution" class="w-full h-48 object-cover">
+                </div>
+                <div class="p-6 flex flex-col flex-1">
+                    <span
+                        class="inline-block bg-yellow-100 text-yellow-700 px-2 py-1 rounded-full text-xs font-semibold mb-2">FUNDD.CO</span>
+                    <h3 class="font-bold text-lg mb-2">Invoice based funding</h3>
+                    <p class="text-gray-600 mb-4">Fundd.co was built for small business owners . Our easy to use
+                        solution can give you instant decisions on funding invoices for services provided by Mojave
+                        Technologies . Whether it be $500 or $10,000 you can get an approval within 30 seconds or less
+                    </p>
+                    <a href="https://fundd.co"
+                        class="mt-auto text-yellow-700 font-semibold flex items-center hover:underline">Visit Fundd.co
+                        <span class="ml-1">→</span></a>
+                </div>
+            </div>
+
+            <!-- Card 7: NICE -->
+            <div class="bg-white rounded-2xl shadow-lg flex flex-col overflow-hidden">
+                <div class="bg-gray-200 h-48 w-full flex items-center justify-center">
+                    <img src="assets/logos/nice.png" alt="NICE Solution" class="w-full h-48 object-cover">
+                </div>
+                <div class="p-6 flex flex-col flex-1">
+                    <span
+                        class="inline-block bg-yellow-100 text-yellow-700 px-2 py-1 rounded-full text-xs font-semibold mb-2">NICE.IM</span>
+                    <h3 class="font-bold text-lg mb-2">Improve your bottom line with Nice</h3>
+                    <p class="text-gray-600 mb-4">Our AI based kitchen/order display system is powerful and can help you
+                        streamline your back office and kitchen areas with relative ease . All information about orders
+                        appear in one screen and our AI base intelligent routing system can help you keep wait times
+                        under control. Nice KDS can help you with a diverse kitchen staff by offering support of
+                        Spanish, French, English and Portuguese languages. Nice KDS can run on Android and IPad
+                        tablets. Additional commercial grade hardware can be purchased as well</p>
+                    <a href="https://nice.im"
+                        class="mt-auto text-yellow-700 font-semibold flex items-center hover:underline">Visit Nice.im
+                        <span class="ml-1">→</span></a>
+                </div>
+            </div>
+
+            <!-- Card 8: Impacting -->
+            <div class="bg-white rounded-2xl shadow-lg flex flex-col overflow-hidden">
+                <div class="bg-gray-200 h-48 w-full flex items-center justify-center">
+                    <img src="assets/logos/impacting.png" alt="Impacting Solution"
+                        class="w-full h-48 object-cover">
+                </div>
+                <div class="p-6 flex flex-col flex-1">
+                    <span
+                        class="inline-block bg-yellow-100 text-yellow-700 px-2 py-1 rounded-full text-xs font-semibold mb-2">IMPACTING.IO</span>
+                    <h3 class="font-bold text-lg mb-2">Convert your sales data into cash</h3>
+                    <p class="text-gray-600 mb-4">Most business owners don't realize the gold mine that exists from
+                        something you do every single day. Impacting.Io takes your sales and product data and in a
+                        generic fashion allows you to monetize it on a frequent basis . This information is valuable to
+                        third parties. What Impacting.Io put some dollars back in your company's bank account .</p>
+                    <a href="https://impacting.io"
+                        class="mt-auto text-yellow-700 font-semibold flex items-center hover:underline">Visit impacting.io
+                        <span class="ml-1">→</span></a>
+                </div>
+            </div>
+
+            <!-- Card 9: Rhumba.ai -->
+            <div class="bg-white rounded-2xl shadow-lg flex flex-col overflow-hidden">
+                <div class="bg-gray-200 h-48 w-full flex items-center justify-center">
+                    <img src="assets/logos/rhumba.png" alt="Rhumba.ai Solution" class="w-full h-48 object-cover">
+                </div>
+                <div class="p-6 flex flex-col flex-1">
+                    <span
+                        class="inline-block bg-yellow-100 text-yellow-700 px-2 py-1 rounded-full text-xs font-semibold mb-2">Rhumba.AI</span>
+                    <h3 class="font-bold text-lg mb-2">Supercharge your sales</h3>
+                    <p class="text-gray-600 mb-4">Let Rhumba.ai help you get a leg up on the competition by optimizing
+                        your sales, product inventory, purchasing and pricing information . Our product analyzer can
+                        also determine how your pricing and sales stack up against other similar stores.</p>
+                    <a href="https://Rhumba.ai"
+                        class="mt-auto text-yellow-700 font-semibold flex items-center hover:underline">Visit Rhumba.ai
+                        <span class="ml-1">→</span></a>
+                </div>
+            </div>
+
+            <!-- Card 10: Redr -->
+            <div class="bg-white rounded-2xl shadow-lg flex flex-col overflow-hidden">
+                <div class="bg-gray-200 h-48 w-full flex items-center justify-center">
+                    <img src="assets/logos/redr.png" alt="Redr Solution" class="w-full h-48 object-cover">
+                </div>
+                <div class="p-6 flex flex-col flex-1">
+                    <span
+                        class="inline-block bg-yellow-100 text-yellow-700 px-2 py-1 rounded-full text-xs font-semibold mb-2">REDR.IO</span>
+                    <h3 class="font-bold text-lg mb-2">The secure way to share links</h3>
+                    <p class="text-gray-600 mb-4">Redr.io is a way to shorten URL's and to securely share them Choose
+                        from over a dozen custom URLs, you can even hide your email address when sending secure URL
+                        links via email, and you can also hide the ultimate destination of your URL's .</p>
+                    <a href="https://redr.io"
+                        class="mt-auto text-yellow-700 font-semibold flex items-center hover:underline">Visit Redr.io
+                        <span class="ml-1">→</span></a>
+                </div>
+            </div>
+
+            <!-- Card 11: Buyy -->
+            <div class="bg-white rounded-2xl shadow-lg flex flex-col overflow-hidden">
+                <div class="bg-gray-200 h-48 w-full flex items-center justify-center">
+                    <img src="assets/logos/buyy.png" alt="Buyy Solution" class="w-full h-48 object-cover">
+                </div>
+                <div class="p-6 flex flex-col flex-1">
+                    <span
+                        class="inline-block bg-yellow-100 text-yellow-700 px-2 py-1 rounded-full text-xs font-semibold mb-2">BUYY.IO</span>
+                    <h3 class="font-bold text-lg mb-2">Buy/sell unsold products</h3>
+                    <p class="text-gray-600 mb-4">Buyy.io is a platform to quickly and conveniently buy and sell your
+                        unsold products and goods. Our platform is directly integrated into Rhumba.ai and with our
+                        Shopify and Magento integrations, allows you with one click to list all of your unsold products
+                        and inventory on the buyy platform.</p>
+                    <a href="https://buyy.io"
+                        class="mt-auto text-yellow-700 font-semibold flex items-center hover:underline">Visit Buyy.io
+                        <span class="ml-1">→</span></a>
+                </div>
+            </div>
+
+            <!-- Card 12: Hoodoo -->
+            <div class="bg-white rounded-2xl shadow-lg flex flex-col overflow-hidden">
+                <div class="bg-gray-200 h-48 w-full flex items-center justify-center">
+                    <img src="assets/logos/hoodoo.png" alt="Hoodoo Solution" class="w-full h-48 object-cover">
+                </div>
+                <div class="p-6 flex flex-col flex-1">
+                    <span
+                        class="inline-block bg-yellow-100 text-yellow-700 px-2 py-1 rounded-full text-xs font-semibold mb-2">HOODOO.SITE</span>
+                    <h3 class="font-bold text-lg mb-2">Free secure website scan</h3>
+                    <p class="text-gray-600 mb-4">Hoodoo is a free service that allows you to externally scan your
+                        website for vulnerabilities. It validates nearly 100 checks to ensure your website is as free
+                        as possible from any vulnerabilities that bad actors can compromise.</p>
+                    <a href="https://hoodoo.site"
+                        class="mt-auto text-yellow-700 font-semibold flex items-center hover:underline">Visit Hoodoo.site
+                        <span class="ml-1">→</span></a>
+                </div>
+            </div>
+
+            <!-- Card 13: Flaw -->
+            <div class="bg-white rounded-2xl shadow-lg flex flex-col overflow-hidden">
+                <div class="bg-gray-200 h-48 w-full flex items-center justify-center">
+                    <img src="assets/logos/flaw.png" alt="Flaw Solution" class="w-full h-48 object-cover">
+                </div>
+                <div class="p-6 flex flex-col flex-1">
+                    <span
+                        class="inline-block bg-yellow-100 text-yellow-700 px-2 py-1 rounded-full text-xs font-semibold mb-2">FLAW.CO</span>
+                    <h3 class="font-bold text-lg mb-2">Affordable penetration testing</h3>
+                    <p class="text-gray-600 mb-4">Flaw.co is an automated penetration testing platform that helps you
+                        identify both internal and external vulnerabilities for your business. Our process uses a
+                        combination of automated , manual and AI processes over 120 data points. Keep your business
+                        secure with flaw.co</p>
+                    <a href="https://flaw.co"
+                        class="mt-auto text-yellow-700 font-semibold flex items-center hover:underline">Visit Flaw.co
+                        <span class="ml-1">→</span></a>
+                </div>
+            </div>
+
+            <!-- Card 14: log.dev -->
+            <div class="bg-white rounded-2xl shadow-lg flex flex-col overflow-hidden">
+                <div class="h-48 w-full flex items-center justify-center" style="background-color: #6830eb;">
+                    <img src="assets/logos/log.png" alt="log.dev Solution"
+                        class="w-full h-48 object-contain">
+                </div>
+                <div class="p-6 flex flex-col flex-1">
+                    <span
+                        class="inline-block bg-yellow-100 text-yellow-700 px-2 py-1 rounded-full text-xs font-semibold mb-2">LOG.DEV</span>
+                    <h3 class="font-bold text-lg mb-2">Analyze your log files in real time using AI</h3>
+                    <p class="text-gray-600 mb-4">Access all of your server log files which may include security,
+                        access, error, mail logs and more and process into a single platform. Log.dev will apply our AI
+                        based proprietary algorithm to group and show statistical information and also identify
+                        potential anomalies or threats . Using our notification system you can also receive email and
+                        sms-based notification if certain thresholds are exceeded. We have out of the box Solutions for
+                        Aws, Google cloud, Azure and Oracle cloud or use our CLI agent on your existing instances. With
+                        log.dev you have an Enterprise solution available to you at an affordable price .</p>
+                    <a href="https://log.dev"
+                        class="mt-auto text-yellow-700 font-semibold flex items-center hover:underline">Visit log.dev
+                        <span class="ml-1">→</span></a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <script type="text/javascript">
+        // QR Code logic commented out for now
+        /*
+        var qrcode = new QRCode(document.getElementById("qrcode"), {
+            text: "https://mojave.com",
+            width: 244,
+            height: 244,
+            colorDark : "#000000",
+            colorLight : "#ffffff",
+            correctLevel : QRCode.CorrectLevel.H
+        });
+        */
+    </script>
+</body>
+
+</html>
